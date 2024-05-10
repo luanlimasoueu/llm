@@ -1,0 +1,12 @@
+user_id;product_id;product_name;brand;category;price;color;size;origem
+19;1;Dress;Adidas;Men's Fashion;1.04;Black;XL;brazil
+97;2;Shoes;H&M;Women's Fashion;4.02;Black;L;usa
+25;3;Dress;Adidas;Women's Fashion;3.33;Yellow;XL;france
+57;4;Shoes;Zara;Men's Fashion;1.04;White;S;france
+79;5;T-shirt;Adidas;Men's Fashion;4.30;Black;M; usa
+98;6;Dress;Adidas;Men's Fashion;1.47;Yellow;L; brazil
+16;7;Jeans;Gucci;Men's Fashion;1.35;White;XL;usa
+63;8;Sweater;Zara;Kids' Fashion;4.36;Blue;XL;brazil
+96;9;Sweater;H&M;Men's Fashion;4.46;Green;XL;usa
+36;10;T-shirt;Zara;Kids' Fashion;4.09;White;XL;brazil
+35;10;T-shirt;Zara;Kids' Fashion;4.09;White;XL;usa
