@@ -1,7 +1,0 @@
-
-myvenv/Scripts/Activate
-python -m pip install streamlit_extras==0.3.5
-pip install openai
-pip install tiktoken
-pip install langchain==0.0.316
-pip install openai==0.28.1

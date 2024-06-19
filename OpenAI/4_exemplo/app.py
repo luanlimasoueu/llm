@@ -19,7 +19,7 @@ with st.sidebar:
 def main():
     st.write("Hello")
     
-    os.environ['OPENAI_API_KEY'] = 'sk-proj-mSaGOPEVgZFNwWD6Im5BT3BlbkFJSFUPdH2i67dZgn6zM7js'
+    os.environ['OPENAI_API_KEY'] = ''
 
 
     pdf = st.file_uploader("Upload your PDF", type='pdf')
