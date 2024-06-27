@@ -1,0 +1,7 @@
+langchain
+openai
+chromadb
+jupyter
+langchain-community
+langchain-openai
+
