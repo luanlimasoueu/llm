@@ -1,0 +1,4 @@
+https://kleiber.me/blog/2023/02/25/question-answering-using-langchain/
+
+https://hub.asimov.academy/tutorial/prompt-templates-em-langchain-um-guia-completo-de-uso/
+
