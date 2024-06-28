@@ -2,21 +2,20 @@ import streamlit as st
 import pickle
 import os
 from PyPDF2 import PdfReader
-from streamlit_extras.add_vertical_space import add_vertical_space 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores.faiss import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 
 with st.sidebar:
     st.title("LLM Chat App")
 
-    add_vertical_space (5)
     st.write("Luan Lima")
 
 def main():
     st.write("Hello")
     
-    os.environ['OPENAI_API_KEY'] = ''
+    api_key = os.getenv("OPENAI_API_KEY")
+    os.environ["OPENAI_API_KEY"] = api_key
 
 
     pdf = st.file_uploader("Upload your PDF", type='pdf')
