@@ -17,20 +17,19 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 
 # Vector Embedding And Vector Store
 
-from langchain_community.vectorstores import FAISS
+from langchain.vectorstores import FAISS
 
 ## LLm Models
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
-## Bedrock Clients
-
 boto3.setup_default_session(
     aws_access_key_id = os.getenv("aws_access_key_id"),
     aws_secret_access_key= os.getenv("aws_secret_access_key"),
-     region_name="us-east-1"
-)
+    region_name = os.getenv("us-east-1"),
+    )
 
+## Bedrock Clients
 bedrock=boto3.client(service_name="bedrock-runtime")
 bedrock_embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",client=bedrock)
 
@@ -120,7 +119,7 @@ def main():
 
     if st.button("Claude Output"):
         with st.spinner("Processing..."):
-            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
+            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings)
             llm=get_claude_llm()
             
             #faiss_index = get_vector_store(docs)
@@ -129,7 +128,7 @@ def main():
 
     if st.button("Llama2 Output"):
         with st.spinner("Processing..."):
-            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
+            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings)
             llm=get_llama2_llm()
             
             #faiss_index = get_vector_store(docs)
@@ -139,6 +138,15 @@ def main():
 if __name__ == "__main__":
     main()
 
-'''
-https://github.com/krishnaik06/AWS-Bedrock/blob/main/app.py
-'''
+
+
+
+
+
+
+
+
+
+
+
+
