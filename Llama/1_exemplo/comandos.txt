@@ -1,2 +1,4 @@
 https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo
 
+https://colab.research.google.com/drive/1MSd7lIZ9zgm00EkjowTD4msM5mOqQVFY?usp=sharing
+
