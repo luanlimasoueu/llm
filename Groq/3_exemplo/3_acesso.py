@@ -20,7 +20,7 @@ def encode_image(image_path):
     return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Path to your image
-image_path = "Nfe.png"
+image_path = "Cupom.jpg"
 
 # Getting the base64 string
 base64_image = encode_image(image_path)
@@ -32,7 +32,7 @@ chat_completion = client.chat.completions.create(
         {
             "role": "user",
             "content": [
-                {"type": "text", "text": " Que tipo de documento é esse?"},
+                {"type": "text", "text": " Que combustível foi consumido e quantos litros, e preço do litro da gasolina?"},
                 {
                     "type": "image_url",
                     "image_url": {
